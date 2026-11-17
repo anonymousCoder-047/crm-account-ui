@@ -44,6 +44,10 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          # Auto-create the Pages site on first run (repo → Settings → Pages
+          # will then show "Build and deployment: GitHub Actions")
+          enablement: true
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
