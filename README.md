@@ -2,7 +2,7 @@
 
 React + Vite SPA for the CRM Accounts app (invoicing, expenses, delivery orders, accounting/ledger, reports).
 
-**Live preview:** https://anonymouscoder-047.github.io/crm-account-ui/
+**Live preview:** https://anonymouscoder-047.github.io/
 
 **Backend API:** https://crm-accounts-server-five.vercel.app/api
 

@@ -73,7 +73,7 @@ ReactDOM.createRoot(document.getElementById('app')!).render(
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
         <ThemedConfigProvider>
-          <BrowserRouter>
+          <BrowserRouter basename={import.meta.env.BASE_URL}>
             <App />
           </BrowserRouter>
         </ThemedConfigProvider>
