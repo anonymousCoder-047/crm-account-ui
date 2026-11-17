@@ -36,6 +36,9 @@ const cleanBuildDir = () => {
 
 // https://vite.dev/config/
 export default defineConfig({
+  // Base path for hosting under a subpath (e.g. GitHub Pages at /<repo>/).
+  // Set via VITE_BASE_PATH at build time; defaults to root for normal hosting.
+  base: process.env.VITE_BASE_PATH || '/',
   plugins: [react(), cleanBuildDir()],
   resolve: {
     alias: {
