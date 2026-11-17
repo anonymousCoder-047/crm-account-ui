@@ -1,0 +1,511 @@
+{
+  "name": "Default Bilingual Delivery Order Template",
+  "description": "Default delivery order template with English on left and Arabic on right",
+  "pageWidth": 794,
+  "pageHeight": 1123,
+  "elements": [
+    {
+      "id": "logo-1",
+      "type": "image",
+      "x": 650,
+      "y": 30,
+      "width": 120,
+      "height": 80,
+      "imageUrl": "/images/logo_en.svg",
+      "style": {
+        "borderWidth": 0
+      }
+    },
+    {
+      "id": "company-name-en",
+      "type": "text",
+      "x": 30,
+      "y": 30,
+      "width": 300,
+      "height": 40,
+      "content": "BUSTAN AL FIRDOUS",
+      "contentEn": "BUSTAN AL FIRDOUS",
+      "rtl": false,
+      "style": {
+        "fontSize": 24,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#E21C1C",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "company-name-ar",
+      "type": "text",
+      "x": 464,
+      "y": 30,
+      "width": 300,
+      "height": 40,
+      "content": "بستان الفردوس",
+      "contentAr": "بستان الفردوس",
+      "rtl": true,
+      "style": {
+        "fontSize": 24,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#E21C1C",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "company-subtitle-en",
+      "type": "text",
+      "x": 30,
+      "y": 75,
+      "width": 300,
+      "height": 30,
+      "content": "GENERAL TRADING L.L.C",
+      "contentEn": "GENERAL TRADING L.L.C",
+      "rtl": false,
+      "style": {
+        "fontSize": 16,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "company-subtitle-ar",
+      "type": "text",
+      "x": 464,
+      "y": 75,
+      "width": 300,
+      "height": 30,
+      "content": "للتجارة العامة ذ.م.م",
+      "contentAr": "للتجارة العامة ذ.م.م",
+      "rtl": true,
+      "style": {
+        "fontSize": 16,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "divider-1",
+      "type": "line",
+      "x": 30,
+      "y": 120,
+      "width": 734,
+      "height": 2,
+      "style": {
+        "borderColor": "#000000",
+        "borderWidth": 2
+      }
+    },
+    {
+      "id": "document-title-en",
+      "type": "text",
+      "x": 30,
+      "y": 140,
+      "width": 300,
+      "height": 40,
+      "content": "DELIVERY ORDER",
+      "contentEn": "DELIVERY ORDER",
+      "rtl": false,
+      "style": {
+        "fontSize": 28,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "center"
+      }
+    },
+    {
+      "id": "document-title-ar",
+      "type": "text",
+      "x": 464,
+      "y": 140,
+      "width": 300,
+      "height": 40,
+      "content": "أمر التسليم",
+      "contentAr": "أمر التسليم",
+      "rtl": true,
+      "style": {
+        "fontSize": 28,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "center"
+      }
+    },
+    {
+      "id": "serial-label-en",
+      "type": "text",
+      "x": 30,
+      "y": 200,
+      "width": 150,
+      "height": 25,
+      "content": "Serial Number",
+      "contentEn": "Serial Number",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "serial-value",
+      "type": "text",
+      "x": 180,
+      "y": 200,
+      "width": 150,
+      "height": 25,
+      "content": "{{serialNumber}}",
+      "contentEn": "{{serialNumber}}",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "serial-label-ar",
+      "type": "text",
+      "x": 614,
+      "y": 200,
+      "width": 150,
+      "height": 25,
+      "content": "الرقم التسلسلي",
+      "contentAr": "الرقم التسلسلي",
+      "rtl": true,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "invoice-label-en",
+      "type": "text",
+      "x": 30,
+      "y": 230,
+      "width": 150,
+      "height": 25,
+      "content": "Invoice Number",
+      "contentEn": "Invoice Number",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "invoice-value",
+      "type": "text",
+      "x": 180,
+      "y": 230,
+      "width": 150,
+      "height": 25,
+      "content": "{{invoiceNumber}}",
+      "contentEn": "{{invoiceNumber}}",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "invoice-label-ar",
+      "type": "text",
+      "x": 614,
+      "y": 230,
+      "width": 150,
+      "height": 25,
+      "content": "رقم الفاتورة",
+      "contentAr": "رقم الفاتورة",
+      "rtl": true,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "customer-label-en",
+      "type": "text",
+      "x": 30,
+      "y": 260,
+      "width": 150,
+      "height": 25,
+      "content": "Customer",
+      "contentEn": "Customer",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "customer-value",
+      "type": "text",
+      "x": 180,
+      "y": 260,
+      "width": 250,
+      "height": 25,
+      "content": "{{customer.name}}",
+      "contentEn": "{{customer.name}}",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "customer-label-ar",
+      "type": "text",
+      "x": 614,
+      "y": 260,
+      "width": 150,
+      "height": 25,
+      "content": "العميل",
+      "contentAr": "العميل",
+      "rtl": true,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "date-label-en",
+      "type": "text",
+      "x": 30,
+      "y": 290,
+      "width": 150,
+      "height": 25,
+      "content": "Date",
+      "contentEn": "Date",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "date-value",
+      "type": "text",
+      "x": 180,
+      "y": 290,
+      "width": 150,
+      "height": 25,
+      "content": "{{date}}",
+      "contentEn": "{{date}}",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "date-label-ar",
+      "type": "text",
+      "x": 614,
+      "y": 290,
+      "width": 150,
+      "height": 25,
+      "content": "التاريخ",
+      "contentAr": "التاريخ",
+      "rtl": true,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "delivery-address-label-en",
+      "type": "text",
+      "x": 30,
+      "y": 320,
+      "width": 150,
+      "height": 25,
+      "content": "Delivery Address",
+      "contentEn": "Delivery Address",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "delivery-address-value",
+      "type": "text",
+      "x": 180,
+      "y": 320,
+      "width": 250,
+      "height": 25,
+      "content": "{{deliveryAddress}}",
+      "contentEn": "{{deliveryAddress}}",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "delivery-address-label-ar",
+      "type": "text",
+      "x": 614,
+      "y": 320,
+      "width": 150,
+      "height": 25,
+      "content": "عنوان التسليم",
+      "contentAr": "عنوان التسليم",
+      "rtl": true,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "line-items-table",
+      "type": "table",
+      "x": 30,
+      "y": 360,
+      "width": 734,
+      "height": 400,
+      "style": {
+        "borderColor": "#000000",
+        "borderWidth": 1,
+        "headerBackgroundColor": "#f3f4f6",
+        "headerTextColor": "#000000",
+        "cellPadding": 8
+      },
+      "columns": [
+        {
+          "id": "serial",
+          "label": "#",
+          "labelEn": "#",
+          "labelAr": "#",
+          "width": 50,
+          "align": "center",
+          "field": "{{serial}}"
+        },
+        {
+          "id": "product",
+          "label": "Product",
+          "labelEn": "Product",
+          "labelAr": "المنتج",
+          "width": 400,
+          "align": "left",
+          "field": "{{product.name}}"
+        },
+        {
+          "id": "quantity",
+          "label": "Quantity",
+          "labelEn": "Quantity",
+          "labelAr": "الكمية",
+          "width": 100,
+          "align": "right",
+          "field": "{{quantity}}"
+        },
+        {
+          "id": "delivered",
+          "label": "Delivered",
+          "labelEn": "Delivered",
+          "labelAr": "تم التسليم",
+          "width": 100,
+          "align": "center",
+          "field": "{{delivered}}"
+        }
+      ]
+    },
+    {
+      "id": "divider-2",
+      "type": "line",
+      "x": 30,
+      "y": 780,
+      "width": 734,
+      "height": 2,
+      "style": {
+        "borderColor": "#000000",
+        "borderWidth": 2
+      }
+    },
+    {
+      "id": "footer-text-en",
+      "type": "text",
+      "x": 30,
+      "y": 800,
+      "width": 300,
+      "height": 30,
+      "content": "Thank You For Your Business",
+      "contentEn": "Thank You For Your Business",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "color": "#666666",
+        "textAlign": "center"
+      }
+    },
+    {
+      "id": "footer-text-ar",
+      "type": "text",
+      "x": 464,
+      "y": 800,
+      "width": 300,
+      "height": 30,
+      "content": "شكراً لتعاملكم معنا",
+      "contentAr": "شكراً لتعاملكم معنا",
+      "rtl": true,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "color": "#666666",
+        "textAlign": "center"
+      }
+    }
+  ]
+}

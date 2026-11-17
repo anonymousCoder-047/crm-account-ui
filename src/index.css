@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme */
+    --background: 220 30% 97%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    /* Primary: emerald */
+    --primary: 160 84% 32%;
+    --primary-foreground: 0 0% 100%;
+    /* Secondary: light slate surface */
+    --secondary: 210 40% 94%;
+    --secondary-foreground: 222 47% 15%;
+    --muted: 210 40% 94%;
+    --muted-foreground: 215 16% 47%;
+    /* Accent: light emerald tint for hover surfaces */
+    --accent: 160 60% 93%;
+    --accent-foreground: 160 84% 22%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 88%;
+    --input: 214 32% 88%;
+    --ring: 160 84% 32%;
+    --radius: 0.5rem;
+    /* Brand gradient partner */
+    --gold: 43 74% 45%;
+    /* Elevated surface gradient */
+    --surface-1: 0 0% 100%;
+    --surface-2: 216 35% 95%;
+  }
+
+  .dark {
+    /* Dark professional theme — deep navy-charcoal surfaces,
+       emerald primary with a gold gradient accent */
+    --background: 222 47% 6%;
+    --foreground: 210 40% 96%;
+    --card: 222 44% 10%;
+    --card-foreground: 210 40% 96%;
+    --popover: 222 44% 11%;
+    --popover-foreground: 210 40% 96%;
+    /* Primary: emerald #10b981 */
+    --primary: 160 84% 39%;
+    --primary-foreground: 160 100% 8%;
+    /* Secondary: muted slate surface */
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 92%;
+    --muted: 217 33% 14%;
+    --muted-foreground: 215 20% 62%;
+    /* Accent: deep emerald tint for hover surfaces */
+    --accent: 160 45% 16%;
+    --accent-foreground: 160 70% 72%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 160 84% 39%;
+    --gold: 43 74% 49%;
+    --surface-1: 222 44% 12%;
+    --surface-2: 222 47% 8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Custom animations and utilities */
+@layer utilities {
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out;
+  }
+
+  .animate-slide-in {
+    animation: slide-in 0.3s ease-out;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Brand gradient (emerald -> gold) */
+  .bg-gradient-brand {
+    background-image: linear-gradient(135deg, #34d399 0%, #10b981 45%, #d4af37 100%);
+  }
+
+  .text-gradient {
+    background-image: linear-gradient(135deg, #34d399 0%, #10b981 45%, #d4af37 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Elevated surface with a faint top sheen */
+  .bg-gradient-surface {
+    background-image: linear-gradient(165deg, hsl(var(--surface-1)) 0%, hsl(var(--surface-2)) 100%);
+  }
+
+  /* Frosted dark glass panel */
+  .glass-panel {
+    background-color: hsl(var(--card) / 0.82);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+}
+
+/* Dark scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--secondary));
+  border-radius: 8px;
+  border: 2px solid hsl(var(--background));
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent));
+}
+
+/* Ant Design component styling to match brand colors */
+.ant-picker:hover,
+.ant-picker-focused {
+  border-color: hsl(var(--primary)) !important;
+}
+
+.ant-picker-focused {
+  box-shadow: 0 0 0 2px hsl(var(--primary) / 0.2) !important;
+}
+
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector,
+.ant-select-focused:not(.ant-select-disabled) .ant-select-selector {
+  border-color: hsl(var(--primary)) !important;
+}
+
+.ant-select-focused:not(.ant-select-disabled) .ant-select-selector {
+  box-shadow: 0 0 0 2px hsl(var(--primary) / 0.2) !important;
+}
+
+.ant-input-number:hover,
+.ant-input-number-focused {
+  border-color: hsl(var(--primary)) !important;
+}
+
+.ant-input-number-focused {
+  box-shadow: 0 0 0 2px hsl(var(--primary) / 0.2) !important;
+}
+
+.ant-input:hover,
+.ant-input:focus,
+.ant-input-focused {
+  border-color: hsl(var(--primary)) !important;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  box-shadow: 0 0 0 2px hsl(var(--primary) / 0.2) !important;
+}
+
+.ant-input-number-input:focus {
+  box-shadow: none !important;
+}
+
+.ant-switch-checked {
+  background-color: hsl(var(--primary)) !important;
+}
+
+/* Recharts on dark surfaces */
+.recharts-default-tooltip {
+  background-color: hsl(var(--popover)) !important;
+  border: 1px solid hsl(var(--border)) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.45);
+}
+
+.recharts-tooltip-label,
+.recharts-tooltip-item,
+.recharts-tooltip-item-name,
+.recharts-tooltip-item-value,
+.recharts-tooltip-item-separator {
+  color: hsl(var(--foreground)) !important;
+}
+
+.recharts-cartesian-axis-tick text {
+  fill: hsl(var(--muted-foreground));
+}
+
+.recharts-cartesian-grid line {
+  stroke: hsl(var(--border));
+}

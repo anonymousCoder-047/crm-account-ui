@@ -1,0 +1,752 @@
+{
+  "name": "Default Bilingual Invoice Template",
+  "description": "Default template with English on left and Arabic on right",
+  "pageWidth": 794,
+  "pageHeight": 1123,
+  "elements": [
+    {
+      "id": "logo-1",
+      "type": "image",
+      "x": 650,
+      "y": 30,
+      "width": 120,
+      "height": 80,
+      "imageUrl": "/images/logo_en.svg",
+      "style": {
+        "borderWidth": 0
+      }
+    },
+    {
+      "id": "company-name-en",
+      "type": "text",
+      "x": 30,
+      "y": 30,
+      "width": 300,
+      "height": 40,
+      "content": "BUSTAN AL FIRDOUS",
+      "contentEn": "BUSTAN AL FIRDOUS",
+      "rtl": false,
+      "style": {
+        "fontSize": 24,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#E21C1C",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "company-name-ar",
+      "type": "text",
+      "x": 464,
+      "y": 30,
+      "width": 300,
+      "height": 40,
+      "content": "بستان الفردوس",
+      "contentAr": "بستان الفردوس",
+      "rtl": true,
+      "style": {
+        "fontSize": 24,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#E21C1C",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "company-subtitle-en",
+      "type": "text",
+      "x": 30,
+      "y": 75,
+      "width": 300,
+      "height": 30,
+      "content": "GENERAL TRADING L.L.C",
+      "contentEn": "GENERAL TRADING L.L.C",
+      "rtl": false,
+      "style": {
+        "fontSize": 16,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "company-subtitle-ar",
+      "type": "text",
+      "x": 464,
+      "y": 75,
+      "width": 300,
+      "height": 30,
+      "content": "للتجارة العامة ذ.م.م",
+      "contentAr": "للتجارة العامة ذ.م.م",
+      "rtl": true,
+      "style": {
+        "fontSize": 16,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "divider-1",
+      "type": "line",
+      "x": 30,
+      "y": 120,
+      "width": 734,
+      "height": 2,
+      "style": {
+        "borderColor": "#000000",
+        "borderWidth": 2
+      }
+    },
+    {
+      "id": "invoice-title-en",
+      "type": "text",
+      "x": 30,
+      "y": 140,
+      "width": 150,
+      "height": 30,
+      "content": "Invoice No.",
+      "contentEn": "Invoice No.",
+      "rtl": false,
+      "style": {
+        "fontSize": 14,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "invoice-number",
+      "type": "text",
+      "x": 180,
+      "y": 140,
+      "width": 150,
+      "height": 30,
+      "content": "{{invoiceNumber}}",
+      "contentEn": "{{invoiceNumber}}",
+      "rtl": false,
+      "style": {
+        "fontSize": 14,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "invoice-title-ar",
+      "type": "text",
+      "x": 614,
+      "y": 140,
+      "width": 150,
+      "height": 30,
+      "content": "رقم الفاتورة",
+      "contentAr": "رقم الفاتورة",
+      "rtl": true,
+      "style": {
+        "fontSize": 14,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "date-label-en",
+      "type": "text",
+      "x": 30,
+      "y": 175,
+      "width": 150,
+      "height": 25,
+      "content": "Date",
+      "contentEn": "Date",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "date-value",
+      "type": "text",
+      "x": 180,
+      "y": 175,
+      "width": 150,
+      "height": 25,
+      "content": "{{date}}",
+      "contentEn": "{{date}}",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "date-label-ar",
+      "type": "text",
+      "x": 614,
+      "y": 175,
+      "width": 150,
+      "height": 25,
+      "content": "التاريخ",
+      "contentAr": "التاريخ",
+      "rtl": true,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "customer-label-en",
+      "type": "text",
+      "x": 30,
+      "y": 205,
+      "width": 150,
+      "height": 25,
+      "content": "Customer Name",
+      "contentEn": "Customer Name",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "customer-value",
+      "type": "text",
+      "x": 180,
+      "y": 205,
+      "width": 250,
+      "height": 25,
+      "content": "{{customer.name}}",
+      "contentEn": "{{customer.name}}",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "customer-label-ar",
+      "type": "text",
+      "x": 614,
+      "y": 205,
+      "width": 150,
+      "height": 25,
+      "content": "اسم العميل",
+      "contentAr": "اسم العميل",
+      "rtl": true,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "address-label-en",
+      "type": "text",
+      "x": 30,
+      "y": 235,
+      "width": 150,
+      "height": 25,
+      "content": "Address",
+      "contentEn": "Address",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "address-value",
+      "type": "text",
+      "x": 180,
+      "y": 235,
+      "width": 250,
+      "height": 25,
+      "content": "{{customer.address}}",
+      "contentEn": "{{customer.address}}",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "address-label-ar",
+      "type": "text",
+      "x": 614,
+      "y": 235,
+      "width": 150,
+      "height": 25,
+      "content": "العنوان",
+      "contentAr": "العنوان",
+      "rtl": true,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "divider-2",
+      "type": "line",
+      "x": 30,
+      "y": 275,
+      "width": 734,
+      "height": 2,
+      "style": {
+        "borderColor": "#000000",
+        "borderWidth": 2
+      }
+    },
+    {
+      "id": "description-header-en",
+      "type": "text",
+      "x": 30,
+      "y": 295,
+      "width": 150,
+      "height": 25,
+      "content": "Description of Goods",
+      "contentEn": "Description of Goods",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "description-header-ar",
+      "type": "text",
+      "x": 614,
+      "y": 295,
+      "width": 150,
+      "height": 25,
+      "content": "وصف البضائع",
+      "contentAr": "وصف البضائع",
+      "rtl": true,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "line-items-table",
+      "type": "table",
+      "x": 30,
+      "y": 330,
+      "width": 734,
+      "height": 400,
+      "tableConfig": {
+        "columns": [
+          {
+            "field": "serial",
+            "label": "#",
+            "width": 50,
+            "align": "center",
+            "dataTemplate": "{{index}}"
+          },
+          {
+            "field": "description",
+            "label": "Description / الوصف",
+            "width": 280,
+            "align": "left",
+            "dataTemplate": "{{lineItems.product}}"
+          },
+          {
+            "field": "qty",
+            "label": "Qty / الكمية",
+            "width": 80,
+            "align": "center",
+            "dataTemplate": "{{lineItems.qty}}"
+          },
+          {
+            "field": "unitPrice",
+            "label": "Unit Price / سعر الوحدة",
+            "width": 110,
+            "align": "right",
+            "dataTemplate": "{{lineItems.unitPrice}}"
+          },
+          {
+            "field": "discount",
+            "label": "Disc. % / الخصم",
+            "width": 90,
+            "align": "center",
+            "dataTemplate": "{{lineItems.discount}}"
+          },
+          {
+            "field": "total",
+            "label": "Total / المجموع",
+            "width": 124,
+            "align": "right",
+            "dataTemplate": "{{lineItems.total}}"
+          }
+        ],
+        "showHeader": true,
+        "showBorders": true,
+        "headerRowHeight": 40,
+        "headerRowBackgroundColor": "#f3f4f6",
+        "bodyRowHeight": 35,
+        "bodyRowBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "id": "divider-3",
+      "type": "line",
+      "x": 30,
+      "y": 745,
+      "width": 734,
+      "height": 2,
+      "style": {
+        "borderColor": "#000000",
+        "borderWidth": 2
+      }
+    },
+    {
+      "id": "subtotal-label-en",
+      "type": "text",
+      "x": 450,
+      "y": 765,
+      "width": 150,
+      "height": 25,
+      "content": "Subtotal",
+      "contentEn": "Subtotal",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "subtotal-value",
+      "type": "text",
+      "x": 620,
+      "y": 765,
+      "width": 114,
+      "height": 25,
+      "content": "{{subtotal}}",
+      "contentEn": "{{subtotal}}",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "subtotal-label-ar",
+      "type": "text",
+      "x": 30,
+      "y": 765,
+      "width": 150,
+      "height": 25,
+      "content": "المجموع الفرعي",
+      "contentAr": "المجموع الفرعي",
+      "rtl": true,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "discount-label-en",
+      "type": "text",
+      "x": 450,
+      "y": 795,
+      "width": 150,
+      "height": 25,
+      "content": "Discount",
+      "contentEn": "Discount",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "discount-value",
+      "type": "text",
+      "x": 620,
+      "y": 795,
+      "width": 114,
+      "height": 25,
+      "content": "{{discount}}",
+      "contentEn": "{{discount}}",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "discount-label-ar",
+      "type": "text",
+      "x": 30,
+      "y": 795,
+      "width": 150,
+      "height": 25,
+      "content": "الخصم",
+      "contentAr": "الخصم",
+      "rtl": true,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "vat-label-en",
+      "type": "text",
+      "x": 450,
+      "y": 825,
+      "width": 150,
+      "height": 25,
+      "content": "VAT (5%)",
+      "contentEn": "VAT (5%)",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "vat-value",
+      "type": "text",
+      "x": 620,
+      "y": 825,
+      "width": 114,
+      "height": 25,
+      "content": "{{vat}}",
+      "contentEn": "{{vat}}",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "vat-label-ar",
+      "type": "text",
+      "x": 30,
+      "y": 825,
+      "width": 150,
+      "height": 25,
+      "content": "ضريبة القيمة المضافة",
+      "contentAr": "ضريبة القيمة المضافة",
+      "rtl": true,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "divider-4",
+      "type": "line",
+      "x": 30,
+      "y": 860,
+      "width": 734,
+      "height": 2,
+      "style": {
+        "borderColor": "#000000",
+        "borderWidth": 2
+      }
+    },
+    {
+      "id": "total-label-en",
+      "type": "text",
+      "x": 450,
+      "y": 875,
+      "width": 150,
+      "height": 30,
+      "content": "Net Total Amount",
+      "contentEn": "Net Total Amount",
+      "rtl": false,
+      "style": {
+        "fontSize": 14,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "total-value",
+      "type": "text",
+      "x": 620,
+      "y": 875,
+      "width": 114,
+      "height": 30,
+      "content": "{{total}}",
+      "contentEn": "{{total}}",
+      "rtl": false,
+      "style": {
+        "fontSize": 14,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "total-label-ar",
+      "type": "text",
+      "x": 30,
+      "y": 875,
+      "width": 150,
+      "height": 30,
+      "content": "صافي المبلغ الإجمالي",
+      "contentAr": "صافي المبلغ الإجمالي",
+      "rtl": true,
+      "style": {
+        "fontSize": 14,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "divider-5",
+      "type": "line",
+      "x": 30,
+      "y": 920,
+      "width": 734,
+      "height": 2,
+      "style": {
+        "borderColor": "#000000",
+        "borderWidth": 2
+      }
+    },
+    {
+      "id": "trn-label-en",
+      "type": "text",
+      "x": 30,
+      "y": 940,
+      "width": 100,
+      "height": 25,
+      "content": "TRN:",
+      "contentEn": "TRN:",
+      "rtl": false,
+      "style": {
+        "fontSize": 11,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "trn-value",
+      "type": "text",
+      "x": 130,
+      "y": 940,
+      "width": 200,
+      "height": 25,
+      "content": "{{trn}}",
+      "contentEn": "{{trn}}",
+      "rtl": false,
+      "style": {
+        "fontSize": 11,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "color": "#000000",
+        "textAlign": "left"
+      }
+    },
+    {
+      "id": "trn-label-ar",
+      "type": "text",
+      "x": 664,
+      "y": 940,
+      "width": 100,
+      "height": 25,
+      "content": "الرقم الضريبي:",
+      "contentAr": "الرقم الضريبي:",
+      "rtl": true,
+      "style": {
+        "fontSize": 11,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "color": "#000000",
+        "textAlign": "right"
+      }
+    },
+    {
+      "id": "footer-note",
+      "type": "text",
+      "x": 30,
+      "y": 1050,
+      "width": 734,
+      "height": 50,
+      "content": "Thank You For Your Business",
+      "contentEn": "Thank You For Your Business",
+      "rtl": false,
+      "style": {
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "color": "#666666",
+        "textAlign": "center"
+      }
+    }
+  ]
+}
